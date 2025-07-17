@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Y S Abhiram's Professional Portfolio Website showcasing video editing, UI/UX design, and development expertise." />
+  <meta name="keywords" content="Y S Abhiram, Portfolio, Video Editor, UI/UX Designer, Python Developer, Projects, Resume" />
+  <meta name="author" content="Y S Abhiram" />
+
+  <title>Y S Abhiram | Portfolio</title>
+  <style>
+    :root {
+      --primary: #1e1e2f;
+      --accent: #4caf50;
+      --bg: #f0f2f5;
+      --text: #2c2c2c;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: var(--primary);
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .social-links button {
+      background-color: var(--accent);
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      margin: 0.5rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .main-nav {
+      display: flex;
+      justify-content: center;
+      background-color: #2e3a59;
+      padding: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .main-nav a {
+      margin: 0.5rem;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      background-color: var(--accent);
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    section {
+      padding: 3rem 2rem;
+    }
+
+    .landing {
+      background: var(--accent);
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+
+    .landing img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    .landing-text {
+      max-width: 500px;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 0.4rem 0.8rem;
+      margin: 0.3rem;
+      border-radius: 4px;
+    }
+
+    .resume-link {
+      display: inline-block;
+      margin-top: 1rem;
+      color: var(--primary);
+      font-weight: bold;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .project-card {
+      background: white;
+      padding: 1.5rem;
+      margin: 1rem 0;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .project-card h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .subheading {
+      font-weight: bold;
+      margin-top: 1.5rem;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+
+    @media (max-width: 768px) {
+      header, .main-nav, .social-links {
+        flex-direction: column;
+        align-items: center;
+      }
+      .landing {
+        flex-direction: column;
+      }
+    }
+  </style>
+  <script>
+    window.addEventListener("scroll", function() {
+      const btn = document.getElementById("backToTop");
+      btn.style.display = window.scrollY > 300 ? "flex" : "none";
+    });
+  </script>
+</head>
+<body>
+  <button id="backToTop" class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
+
+  <section class="landing" id="home">
+    <img src="assets/IMG-20240202-WA0103.jpg" alt="Y S Abhiram">
+    <div class="landing-text">
+      <h1>Yamujala Satya Abhiram</h1>
+      <p>Date of Birth: 23-06-2005</p>
+      <p>Welcome to my professional portfolio!</p>
+    </div>
+  </section>
+
+  <header>
+    <div class="logo">Y S Abhiram</div>
+    <div class="social-links">
+      <button onclick="window.open('https://www.linkedin.com/in/satya-abhiram-yamujala', '_blank')">LinkedIn</button>
+      <button onclick="window.open('https://github.com/YSAbhiram23', '_blank')">GitHub</button>
+      <button onclick="window.open('https://www.instagram.com/abhiram_230605/', '_blank')">Instagram</button>
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <a href="#details">Details</a>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#working">Currently Working</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="details">
+    <h2>Details</h2>
+    <p><strong>Name:</strong> Yamujala Satya Abhiram</p>
+    <p><strong>Titles:</strong> UI/UX Designer, Video Editor, Python Developer</p>
+    <p><strong>Bio:</strong> Hi guys, I am a Final-year Computer Science Student with a passion for video editing and app design, and development. This is a professional portfolio. If you find anything interesting, contact me.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a dedicated and detail-oriented Video Editor, UI/UX enthusiast with good experience. Skilled in Python, Davinci Resolve 20, CapCut, and Canva.</p>
+    <a href="assets/Yamujala_Satya_Abhiram_Resume (1).pdf" download class="resume-link">Click to download Resume</a>
+    <div class="skills">
+      <span>Davinci Resolve 20</span>
+      <span>CapCut</span>
+      <span>Canva</span>
+      <span>Python</span>
+      <span>UI/UX</span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <p class="subheading">Technical Projects</p>
+    <div class="project-card">
+      <h3>AI Video Editor</h3>
+      <p>A web app that generates videos based on user prompts and images.</p>
+    </div>
+    <div class="project-card">
+      <h3>Responsive Portfolio</h3>
+      <p>A self-coded, responsive portfolio website using HTML, CSS, and JavaScript.</p>
+    </div>
+
+    <p class="subheading">Non-Technical Projects</p>
+    <div class="project-card">
+      <h3>Edit-1</h3>
+      <p>Ordinary Person ft PSPK</p>
+      <video width="100%" controls>
+        <source src="assets/ordinary_person_ft_pspk.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="project-card">
+      <h3>Edit-2</h3>
+      <p>Fear2</p>
+      <video width="100%" controls>
+        <source src="assets/fear2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications & Achievements</h2>
+    <ul>
+      <li>Certification from ACM India for IoT & Next Generation Solutions</li>
+      <li>Video Editing Certification - Atoms Digital Solutions</li>
+      <li>WAY-SARADHI 2024 Award for Social Service - We Are With You Charitable Trust</li>
+    </ul>
+  </section>
+
+  <section id="working">
+    <h2>Currently Working</h2>
+    <p>Currently working on a Final-Year Project: AI-based video generation tool.<br />
+    Interning at Codetech IT Solutions (UI/UX) and SHER (Video Editing).</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><strong>Name:</strong> Yamujala Satya Abhiram</p>
+    <p><strong>Email:</strong> ysabhiram2005@gmail.com</p>
+    <p><strong>Phone:</strong> +91 8978090478</p>
+    <p><a href="https://www.linkedin.com/in/satya-abhiram-yamujala" target="_blank">LinkedIn Profile</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Y S Abhiram. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
